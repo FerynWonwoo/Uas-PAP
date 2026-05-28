@@ -1,0 +1,406 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #f5f5f5;
+    display: flex;
+    color: #222;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+    width: 324px;
+    height: 100vh;
+    background: #fff;
+    padding: 28px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-right: 1px solid #e8e8e8;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 40px;
+}
+
+.logo-icon{
+    width: 42px;
+    height: 42px;
+    background: #8bc26d;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2C4F1E;
+    font-size: 18px;
+}
+
+.logo h2{
+    font-size: 1.1rem;
+    color: #4f7d3a;
+    line-height: 1;
+}
+
+.logo p{
+    font-size: 0.75rem;
+    color: #666;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.menu-item{
+    height: 46px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 0 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s;
+    color: #444;
+    font-size: 0.95rem;
+}
+
+.menu-item a{
+    text-decoration: none;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s;
+    color: #444;
+    font-size: 0.95rem;
+}
+
+.menu-item:hover{
+    background: #eef7e8;
+}
+
+.menu-item.active{
+    background: #b7df9d;
+    color: #456933;
+    font-weight: 500;
+    border-left: 5px solid #456933;
+}
+
+.logout{
+    border-top: 1px solid #ddd;
+    padding-top: 28px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #555;
+    cursor: pointer;
+}
+
+.logout a{
+    text-decoration: none;
+    color: #555;
+}
+
+/* MAIN */
+
+.main-content{
+    margin-left: 325px;
+    width: calc(100% - 325px);
+    padding-top: 95px;
+}
+
+/* TOPBAR */
+
+.topbar{
+    height: 95px;
+    background: #c3e4ab;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: calc(100% - 325px);
+    z-index: 1000;
+}
+
+.top-right{
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.notif{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.profile a{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: #555;
+}
+
+.profile-text{
+    text-align: right;
+}
+
+.profile-text h4{
+    font-size: 1.05rem;
+    color: #000000;
+}
+
+.profile-text p{
+    font-size: 0.89rem;
+    color: #666;
+}
+
+.profile img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+
+/* CONTENT */
+
+.content{
+    padding: 34px 42px;
+}
+
+.content-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+.content-header h1{
+    font-size: 1.85rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.content-header p{
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.search-box{
+    width: 330px;
+    height: 38px;
+    background: #f2f2f2;
+    border: 1px solid #cfcfcf;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    padding: 0 22px;
+    gap: 14px;
+}
+
+.search-box input{
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+}
+
+.search-box i{
+    color: #666;
+}
+
+/* FILTER */
+
+.filter-buttons{
+    display: flex;
+    gap: 12px;
+    margin-bottom: 38px;
+}
+
+.filter{
+    border: none;
+    height: 32px;
+    width: 120px;
+    padding: 0 22px;
+    border-radius: 24px;
+    background: #ececec;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    transition: .3s;
+}
+
+.filter.active{
+    background: #4d7836;
+    color: white;
+}
+
+/* ARTICLE */
+
+.articles{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.article-card{
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.article-card img{
+    width: 320px;
+    height: 178px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.article-content{
+    flex: 1;
+}
+
+.tag{
+    display: inline-block;
+    background: #e6f1de;
+    color: #4c6e39;
+    padding: 7px 14px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.inspiration{
+    background: #edf6e7;
+}
+
+.health{
+    background: #e8f0dc;
+}
+
+.article-content h2{
+    font-size: 1.05rem;
+    margin-bottom: 14px;
+    line-height: 1.4;
+}
+
+.article-content p{
+    color: #666;
+    font-size: 0.85rem;
+    line-height: 1.8;
+    margin-bottom: 24px;
+    max-width: 800px;
+}
+
+.article-footer{
+    display: flex;
+    gap: 28px;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #555;
+    font-size: 0.75rem;
+}
+
+.arrow{
+    font-size: 20px;
+    color: #444;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* RESPONSIVE */
+
+@media(max-width: 1200px){
+
+    .content-header{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .search-box{
+        width: 100%;
+    }
+}
+
+@media(max-width: 950px){
+
+    .sidebar{
+        width: 90px;
+    }
+
+    .sidebar span,
+    .logo p,
+    .logo h2{
+        display: none;
+    }
+
+    .main-content{
+        margin-left: 90px;
+        width: calc(100% - 90px);
+    }
+
+    .menu-item{
+        justify-content: center;
+    }
+
+    .logout{
+        justify-content: center;
+    }
+}
+
+@media(max-width: 768px){
+
+    .topbar{
+        padding: 0 20px;
+    }
+
+    .content{
+        padding: 20px;
+    }
+
+    .article-card{
+        flex-direction: column;
+    }
+
+    .article-card img{
+        width: 100%;
+        height: 220px;
+    }
+
+    .content-header h1{
+        font-size: 34px;
+    }
+
+    .profile-text{
+        display: none;
+    }
+}

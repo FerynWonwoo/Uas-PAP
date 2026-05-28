@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EduDonasi</title>
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- ICON -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <link rel="stylesheet" href="style/berita.css">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div>
+
+            <!-- LOGO -->
+            <div class="logo">
+
+                <div class="logo-icon">
+                    <i class="fa-solid fa-hand-holding-heart"></i>
+                </div>
+
+                <div>
+                    <h2>EduDonasi</h2>
+                    <p>Belajar, Berbagi, Berdampak</p>
+                </div>
+
+            </div>
+
+            <!-- MENU -->
+            <div class="menu">
+
+                <div class="menu-item">
+                    <a href="dashboard.html">                    
+                        <i class="fa-solid fa-border-all"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </div>
+
+                <div class="menu-item active">
+                    <i class="fa-solid fa-file-lines"></i>
+                    <span>Edukasi / Berita</span>
+                </div>
+
+                <div class="menu-item">
+                    <a href="Donasi.html">
+                        <i class="fa-regular fa-heart"></i>
+                        <span>Donasi</span>
+                    </a>                    
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- LOGOUT -->
+        <div class="logout">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            <a href="login.html">
+                 <span>Keluar</span>
+            </a>
+           
+        </div>
+
+    </aside>
+
+
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+        <!-- TOPBAR -->
+        <div class="topbar">
+
+            <div></div>
+
+            <div class="top-right">
+
+                <div class="notif">
+                    <i class="fa-regular fa-bell"></i>
+                </div>
+
+                <div class="profile">
+                    <a href="profile.html">
+                    <div class="profile-text">
+                        <h4>Hai, Andi</h4>
+                        <p>Donatur Premium</p>
+                    </div>
+
+                    <img src="https://fkh.ub.ac.id/wp-content/uploads/2022/08/MakotFKHUB.jpeg" alt="">
+
+                    <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- CONTENT -->
+        <section class="content">
+
+            <!-- HEADER -->
+            <div class="content-header">
+
+                <div>
+                    <h1>Edukasi & Berita</h1>
+
+                    <p>
+                        Dapatkan pengetahuan dan inspirasi untuk memberi dampak lebih besar.
+                    </p>
+                </div>
+
+                <!-- SEARCH -->
+                <div class="search-box">
+
+                    <input type="text" id="searchInput" placeholder="Cari artikel, topik, atau kata kunci...">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- FILTER -->
+            <div class="filter-buttons">
+
+                <button class="filter active" data-filter="all">
+                    <i class="fa-solid fa-table-cells-large"></i>
+                    Semua
+                </button>
+
+                <button class="filter" data-filter="edukasi">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    Edukasi
+                </button>
+
+                <button class="filter" data-filter="inspirasi">
+                    <i class="fa-regular fa-lightbulb"></i>
+                    Inspirasi
+                </button>
+
+                <button class="filter" data-filter="berita">
+                    <i class="fa-regular fa-newspaper"></i>
+                    Berita
+                </button>
+
+            </div>
+
+
+
+            <!-- ARTICLE LIST -->
+            <div class="articles">
+
+                <!-- ARTICLE 1 -->
+                <div class="article-card" data-category="edukasi">
+
+                    <img src="https://graduate.binus.ac.id/files/2023/04/GAMBAR-SPLASH-22-scaled.jpg"
+                        alt="">
+
+                    <div class="article-content">
+
+                        <span class="tag">EDUKASI</span>
+
+                        <h2>
+                            Pentingnya Pendidikan untuk Masa Depan Generasi Muda
+                        </h2>
+
+                        <p>
+                            Pendidikan adalah kunci untuk membuka peluang dan mewujudkan masa depan yang cerah.
+                            Mari dukung program akses pendidikan bagi semua anak agar tidak ada lagi yang tertinggal.
+                        </p>
+
+                        <div class="article-footer">
+
+                            <div class="info">
+                                <i class="fa-regular fa-calendar"></i>
+                                <span>12 Mei 2024</span>
+                            </div>
+
+                            <div class="info">
+                                <i class="fa-regular fa-clock"></i>
+                                <span>5 menit baca</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="arrow">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+
+                </div>
+
+
+
+
+                <!-- ARTICLE 2 -->
+                <div class="article-card" data-category="inspirasi">
+
+                    <img src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?q=80&w=1200&auto=format&fit=crop"
+                        alt="">
+
+                    <div class="article-content">
+
+                        <span class="tag inspiration">INSPIRASI</span>
+
+                        <h2>
+                            Kisah Inspiratif: Berbagi yang Mengubah Banyak Hidup
+                        </h2>
+
+                        <p>
+                            Sebuah cerita tentang kepedulian kecil yang memberikan dampak besar bagi sesama.
+                            Kadang, kebaikan yang kita anggap remeh justru menjadi harapan terbesar bagi orang lain.
+                        </p>
+
+                        <div class="article-footer">
+
+                            <div class="info">
+                                <i class="fa-regular fa-calendar"></i>
+                                <span>10 Mei 2024</span>
+                            </div>
+
+                            <div class="info">
+                                <i class="fa-regular fa-clock"></i>
+                                <span>6 menit baca</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="arrow">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+
+                </div>
+
+
+
+
+                <!-- ARTICLE 3 -->
+                <div class="article-card" data-category="berita">
+
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop"
+                        alt="">
+
+                    <div class="article-content">
+
+                        <span class="tag health">BERITA</span>
+
+                        <h2>
+                            Tips Menjaga Kesehatan di Tengah Kesibukan
+                        </h2>
+
+                        <p>
+                            Beberapa langkah sederhana untuk menjaga tubuh tetap sehat dan produktif setiap hari.
+                            Mulai dari kebiasaan minum air putih hingga manajemen stres yang efektif.
+                        </p>
+
+                        <div class="article-footer">
+
+                            <div class="info">
+                                <i class="fa-regular fa-calendar"></i>
+                                <span>8 Mei 2024</span>
+                            </div>
+
+                            <div class="info">
+                                <i class="fa-regular fa-clock"></i>
+                                <span>4 menit baca</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="arrow">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- JAVASCRIPT -->
+    <script src="js/berita.js"></script>
+</body>
+
+</html>

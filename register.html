@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>EduDonasi</title>
+
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="style/login.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="form-box">
+
+      <div class="logo">
+        <img src="img/profile.png" alt="">
+      </div>
+
+      <h1>Selamat Datang</h1>
+
+      <p>
+        Silakan isi formulir di bawah ini
+        untuk bergabung dengan EduDonasi
+      </p>
+
+      <form id="registerForm">
+
+  <div class="input-group">
+
+    <label>Nama Lengkap</label>
+
+    <div class="input-box">
+
+      <i class="fa-regular fa-user"></i>
+
+      <input 
+      type="text"
+      id="nama"
+      placeholder="Masukkan nama lengkap">
+
+    </div>
+
+  </div>
+
+  <div class="input-group">
+
+    <label>Email</label>
+
+    <div class="input-box">
+
+      <i class="fa-regular fa-envelope"></i>
+
+      <input 
+      type="email"
+      id="email"
+      placeholder="Masukkan email">
+
+    </div>
+
+  </div>
+
+  <div class="input-group">
+
+    <label>Kata Sandi</label>
+
+    <div class="input-box">
+
+      <i class="fa-solid fa-lock"></i>
+
+      <input 
+      type="password"
+      id="password"
+      placeholder="Masukkan kata sandi">
+
+      <i class="fa-regular fa-eye-slash toggle-password"></i>
+
+    </div>
+
+  </div>
+
+  <div class="input-group">
+
+    <label>Konfirmasi Kata Sandi</label>
+
+    <div class="input-box">
+
+      <i class="fa-solid fa-lock"></i>
+
+      <input 
+      type="password"
+      id="confirmPassword"
+      placeholder="Ulangi kata sandi">
+
+    </div>
+
+  </div>
+
+  <div class="agree">
+
+    <input type="checkbox" id="agree">
+    <span>Setuju dengan syarat & ketentuan</span>
+
+  </div>
+
+  <button type="submit" class="btn">
+    DAFTAR
+  </button>
+
+  <div class="switch-text">
+    Sudah punya akun?
+    <a href="login.html">
+      Masuk di sini
+    </a>
+  </div>
+
+</form>
+    </div>
+
+  </div>
+
+  <script src="js/register.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduDonasi</title>
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- ICON -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <link rel="stylesheet" href="style/donasi.css">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div>
+
+            <!-- LOGO -->
+            <div class="logo">
+
+                <div class="logo-icon">
+                    <i class="fa-solid fa-hand-holding-heart"></i>
+                </div>
+
+                <div>
+                    <h2>EduDonasi</h2>
+                    <p>Belajar, Berbagi, Berdampak</p>
+                </div>
+
+            </div>
+
+            <!-- MENU -->
+            <div class="menu">
+
+                <div class="menu-item">
+                    <a href="dashboard.html">                    
+                        <i class="fa-solid fa-border-all"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </div>
+
+                <div class="menu-item">
+                    <a href="berita.html">
+                        <i class="fa-solid fa-file-lines"></i>
+                        <span>Edukasi / Berita</span>
+                    </a>
+                </div>
+
+                <div class="menu-item active">
+                    <a href="Donasi.html">
+                        <i class="fa-regular fa-heart"></i>
+                        <span>Donasi</span>
+                    </a>                    
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- LOGOUT -->
+        <div class="logout">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            <a href="login.html">
+                 <span>Keluar</span>
+            </a>
+           
+        </div>
+
+    </aside>
+
+
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+        <!-- TOPBAR -->
+        <div class="topbar">
+
+            <div></div>
+
+            <div class="top-right">
+
+                <div class="notif">
+                    <i class="fa-regular fa-bell"></i>
+                </div>
+
+                <div class="profile">
+                    <a href="profile.html">
+                    <div class="profile-text">
+                        <h4>Hai, Andi</h4>
+                        <p>Donatur Premium</p>
+                    </div>
+
+                    <img src="https://fkh.ub.ac.id/wp-content/uploads/2022/08/MakotFKHUB.jpeg" alt="">
+
+                    <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- CONTENT -->
+        <section class="content">
+
+            <!-- HEADER -->
+            <div class="content-header">
+
+                <div>
+                    <h1>Donasi</h1>
+
+                    <p>
+                        Pilih kampanye yang ingin kamu dukung dan bantu wujudkan perubahan.
+                    </p>
+                </div>
+
+                <div class="header-right">
+
+                    <!-- SEARCH -->
+                    <div class="search-box">
+
+                        <i class="fa-solid fa-magnifying-glass"></i>
+
+                        <input type="text" placeholder="Cari kampanye...">
+
+                    </div>
+
+                    <!-- FILTER -->
+                    <button class="filter-btn">
+
+                        <i class="fa-solid fa-sliders"></i>
+
+                        Semua Kategori
+
+                        <i class="fa-solid fa-chevron-down"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- TITLE -->
+            <h2 class="section-title">Kampanye Aktif</h2>
+
+
+
+            <!-- CARDS -->
+            <div class="cards-grid">
+
+                <!-- CARD 1 -->
+                <div class="campaign-card">
+
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?q=80&w=1200&auto=format&fit=crop"
+                            alt="">
+                    </div>
+
+                    <div class="card-content">
+
+                        <span class="tag pendidikan">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            Pendidikan
+                        </span>
+
+                        <h2>
+                            Bantu Pendidikan Anak Pelosok
+                        </h2>
+
+                        <p>
+                            Membantu pengadaan sarana belajar dan buku untuk anak-anak di desa terpencil.
+                        </p>
+
+                        <div class="progress-container">
+                            <div class="progress-bar" style="width: 42%;"></div>
+                        </div>
+
+                        <div class="card-info">
+
+                            <div>
+                                <small>Terkumpul</small>
+                                <h4>Rp 6.250.000</h4>
+                            </div>
+
+                            <div class="right">
+                                <small>Target</small>
+                                <h4>Rp 15.000.000</h4>
+                            </div>
+
+                        </div>
+
+                        <div class="card-footer">
+
+                            <span>42%</span>
+
+                            <button>Donasi</button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- CARD 2 -->
+                <div class="campaign-card">
+
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?q=80&w=1200&auto=format&fit=crop"
+                            alt="">
+                    </div>
+
+                    <div class="card-content">
+
+                        <span class="tag kemanusiaan">
+                            <i class="fa-solid fa-user-group"></i>
+                            Kemanusiaan
+                        </span>
+
+                        <h2>
+                            Sedekah Pangan untuk Sesama
+                        </h2>
+
+                        <p>
+                            Program distribusi paket sembako untuk keluarga dhuafa di perkotaan.
+                        </p>
+
+                        <div class="progress-container">
+                            <div class="progress-bar" style="width: 31%;"></div>
+                        </div>
+
+                        <div class="card-info">
+
+                            <div>
+                                <small>Terkumpul</small>
+                                <h4>Rp 2.350.000</h4>
+                            </div>
+
+                            <div class="right">
+                                <small>Target</small>
+                                <h4>Rp 7.500.000</h4>
+                            </div>
+
+                        </div>
+
+                        <div class="card-footer">
+
+                            <span>31%</span>
+
+                            <button>Donasi</button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- CARD 3 -->
+                <div class="campaign-card">
+
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1200&auto=format&fit=crop"
+                            alt="">
+                    </div>
+
+                    <div class="card-content">
+
+                        <span class="tag bencana">
+                            <i class="fa-solid fa-cloud-showers-heavy"></i>
+                            Bencana
+                        </span>
+
+                        <h2>
+                            Bantuan Korban Bencana Alam
+                        </h2>
+
+                        <p>
+                            Distribusi bantuan darurat dan renovasi rumah pasca bencana banjir.
+                        </p>
+
+                        <div class="progress-container">
+                            <div class="progress-bar" style="width: 43%;"></div>
+                        </div>
+
+                        <div class="card-info">
+
+                            <div>
+                                <small>Terkumpul</small>
+                                <h4>Rp 8.610.000</h4>
+                            </div>
+
+                            <div class="right">
+                                <small>Target</small>
+                                <h4>Rp 20.000.000</h4>
+                            </div>
+
+                        </div>
+
+                        <div class="card-footer">
+
+                            <span>43%</span>
+
+                            <button>Donasi</button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
