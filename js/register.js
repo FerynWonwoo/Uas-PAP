@@ -94,6 +94,6 @@ registerForm.addEventListener("submit", function(e){
   form.reset();
 
   // pindah ke login
-  window.location.href = "login.html";
+  window.location.href = "index.html";
 
 });
