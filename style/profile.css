@@ -79,7 +79,7 @@ body {
 
 .button-group{
     display:flex;
-    gap: 1150px;
+    gap: 20px;
 }
 
 .logout-btn {
